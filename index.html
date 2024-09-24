@@ -16,8 +16,140 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<!-- Slide 1: Title Slide -->
+				<section>
+					<h1 class="r-frame">LLM Fundamentals</h1>
+					<h5>For Developers</h5>
+					<aside class="notes">
+						Intro 
+					</aside>
+				</section>
+		
+				<section>
+					<h1>Vibe Check</h1>
+					<ul>
+						<li>Prompts</li>
+						<li>Contexts</li>
+					</ul>
+					<aside class="notes">
+						ok, I am not sure how much you are gonna learn from this, but I am gonna try to explain it in a way that makes sense to me.
+					</aside>
+				</section>
+		
+				<!-- Slide 2: Opening Story -->
+				<section >
+					<img src="images/1.jpeg" alt="The genie story" width="70%" height="70%">
+				</section>
+				<section >
+					<img src="images/2.jpeg" alt="The genie story" width="70%" height="70%">
+				</section>
+				<section >
+					<img src="images/3.jpeg" alt="The genie story" width="70%" height="70%">
+				</section>
+				<section >
+					<img src="images/4.jpeg" alt="The genie story" width="70%" height="70%">
+				</section>
+				<section >
+					<img src="images/5.jpeg" alt="The genie story" width="70%" height="70%">
+				</section>
+				<section >
+					<img src="images/6.jpeg" alt="The genie story" width="70%" height="70%">
+					<aside class="notes">
+						<ul></ul>
+							<li>Imagine you found a magic lamp, and when you rub it, out pops a genie.</li>
+							<li>This genie is here to grant your wishes!</li>
+							<li>But there’s a catch—this genie has a serious hearing problem.</li>
+		
+							<li>So, you ask the genie, ‘I wish for a billion dollars!’ The genie scratches his head, says, ‘Got it!’ and poof!—a billion donuts appear.</li>
+							<li>You try again: ‘No, no, I meant a billion dollars.’ The genie nods, waves his hand, and this time—poof!—you’re standing inside a room filled with dog collars. Turns out the genie’s pretty bad with details.</li>
+							<li>Finally, you get frustrated and say, ‘I just want to be rich!’ The genie grins, waves his hand, and now… poof!… you’re a guy named Rich. Close enough, right?</li>
+							<li>This genie, as powerful as it is, really struggles with vague requests. It’ll grant you something, but not quite what you wanted. 
+							<li> That’s what working with AI is like. The AI is your genie—it’s incredibly powerful, but if your instructions (prompts) are too vague or lack details, it’ll give you something completely off the mark.</li>
+							<li>So, just like with a tricky genie, with AI, you need to be super clear and specific, or you might end up with donuts instead of dollars.</li>
+					</aside>
+				</section>
+		
+				<section data-auto-animate>
+					<div data-id="box" style="height: 10px; background: salmon;"></div>
+				</section>
+				<section data-auto-animate>
+					<div data-id="box" style="height:70px;  background: rgb(61, 52, 50);">
+						<h4 class="r-fit-text r-frame">______ + ______ + ____  = *desired output.</h4>
+					</div>
+					<aside class="notes">
+						So we all want desired output by being specific when we talk to AI.
+					</aside>
+				</section>
+		
+			<section>
+				<h1 class="r-frame">Prompts</h1>
+				<h4>An LLM prompt is an input guiding AI’s generated response.</h4>
+				<aside class="notes">
+					<ul></ul>
+						<li>How do we talk to AI? Thats your prompt.</li>
+						<li>One thing we should agree on is:</li>
+						<li>LLMs don’t “understand” what you are saying or have “knowledge” they just comes back with the best possible words prediction possible for the set of words you shared. It’s all about probability.</li>
+				</aside>
+			</section>
+
+			<section data-auto-animate>
+				<h3 class="">Prompt</h3>
+				<blockquote>
+					"Write a program in JavaScript to sort an array.” <br> - is it a good prompt?
+				</blockquote>
+				<aside class="notes">
+					<ul>
+						<li>Audience Poll</li>
+						<li>What will be the data type of the array?</li>
+						<li>It’s too vague. There is no information about the type of array (numbers, strings, mixed types).</li>
+						<li>It doesn’t specify the desired sorting order (ascending, descending).</li>
+						<li>No mention of edge cases like an empty array, duplicate values, or performance considerations.</li>
+					</ul>
+				</aside>
+			</section>
+		
+			<section>
+				<h3>Good Prompt</h3>
+				"Write a JavaScript function that sorts an array of numbers in descending order. The function should handle edge cases such as:
+					<ul>
+						<li>An empty array.</li>
+						<li>Arrays with duplicate numbers.</li>
+						<li>Arrays containing both positive and negative integers.</li>
+					</ul>
+			</section>
+		
+			<section>
+				<h3>Good Prompt Tips</h3>
+				<ul>
+					<li>Be specific. Don’t shy away from writing long prompts.</li>
+					<li>Its more like talking to a 5 year old.</li>
+					<li>XML syntax: <a href="https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/use-xml-tags#why-use-xml-tags">Claude AI XML Prompt documentation</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<div data-id="box" style="height:70px;  background: rgb(61, 52, 50);">
+					<h4 class="r-fit-text r-frame"> Detailed Prompt + ______ + ____  = *desired output.</h4>
+				</div>
+			</section>
+
+			<section>
+				<h1 class="r-frame">Context</h1>
+				<h4>Context is information that helps AI understand your prompt.</h4>
+			</section>
+
+			<section>
+				<iframe src="https://sdk.vercel.ai/playground" width="100%" height="600px" frameborder="0" scrolling="no"></iframe>
+			</section>
+			
+		
+				<!-- Slide 11: Closing + Q&A -->
+				<section>
+					<h2>Q&A Time!</h2>
+					<p>So remember: AI is like that well-meaning intern. It tries its best, but it needs guidance from us to be effective!</p>
+					<p>Any questions? Feel free to ask—or let’s see if AI can help… but no promises on accuracy!</p>
+				</section>
+		
 			</div>
 		</div>
 
