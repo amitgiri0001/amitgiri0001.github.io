@@ -128,6 +128,9 @@
 			</section>
 
 			<section>
+				<img src="images/prompt_in_vscode.png" alt="prompt context" >
+			</section>
+			<section>
 				<div data-id="box" style="height:70px;  background: rgb(61, 52, 50);">
 					<h4 class="r-fit-text r-frame"> Detailed Prompt + ______ + ____  = *desired output.</h4>
 				</div>
@@ -135,19 +138,160 @@
 
 			<section>
 				<h1 class="r-frame">Context</h1>
-				<h4>Context is information that helps AI understand your prompt.</h4>
+				<h4>Context tells the LLM what your prompt is about.</h4>
+				<aside class="notes">
+					<ul>
+						<li>Context can be a single sentence, code, image an excel sheet etc.</li>
+					</ul>
+				</aside>
 			</section>
 
 			<section>
-				<iframe src="https://sdk.vercel.ai/playground" width="100%" height="600px" frameborder="0" scrolling="no"></iframe>
+				<img src="images/context_is_important.png" alt="context" width="70%" height="70%">
+			</section>
+
+			<section>
+				<img src="images/sameandruby_context.png" alt="context">	
+			</section>
+
+			<section>
+				<img src="images/conext_llm_apart.png" alt="context">
+			</section>
+
+			<section>
+				<img src="images/context_llm_close.png" alt="context" width="80%" height="70%">
+				<aside class="notes">
+					<ul>
+						<li>Word Probability sets as per the context.</li>
+						<li>Too much context and model will set more probability to the words that might not be relevant.</li>
+						<li>Too much context can cause hallucinations.</li>
+						<li>Just add relevant context.</li>
+					</ul>
+				</aside>
+			</section>
+
+			<section>
+				<img src="images/context_prompt_zoom_in.png" alt="context" >
+			</section>
+
+			<section>
+				<h1 class="r-frame">Context Window</h1>
+				<h4>The number of tokens (words) the LLM can accept as context.</h4>
+				<aside class="notes">
+					<ul>
+						<li>Context can be a single sentence, code, image an excel sheet etc.</li>
+					</ul>
+				</aside>
+			</section>
+
+			<section>
+				<iframe src="https://sdk.vercel.ai/playground" width="100%" height="700px" frameborder="0" scrolling="no"></iframe>
 			</section>
 			
+			<section>
+				<img src="images/context_window.png" alt="context window" >
+				<aside class="notes">
+					<ul>
+						<li>The number of tokens is dynamic based on the model you are using.</li>
+						<li>The context gets trimmed as you add more context and it exceeds the context window.</li>
+					</ul>
+				</aside>
+			</section>
+
+			<section>
+				<h3>Tips</h3>
+				<ul>
+					<li>Only add relevant context. No too much but not too less either.</li>
+					<li>Create a new chat for different context.</li>
+					<li>Don't chat for too long in a single session/window as context window will be exceeded.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>How to supply context to LLM?</h3>
+				<ul>
+					<li>Coding Assistants use open files as context.</li>
+					<li>Other tools uses codebase indexing and embeddings to supply context.</li>
+				</ul>
+			</section>
+
+			<section>
+				<div data-id="box" style="height:70px;  background: rgb(61, 52, 50);">
+					<h4 class="r-fit-text r-frame"> Detailed Prompt + Decent context + ____  = *desired output.</h4>
+				</div>
+			</section>
+
+
+			<section>
+				<h1 class="r-frame">The Model</h1>
+				<h4>But what is a good model?</h4>
+				<ul>
+					<li>Generally larger models are better. But it depends on their training data.</li>
+					<li>The model that are tailored for your needs.</li>
+					<li>Like Github copilot, Gemini code assist is for coding, Stable Diffusion is for images. etc</li>
+					<li>Using specific models for specific tasks is better.</li>
+					<li>Large model is not equals to large context window. Setting a large context window is an model architecture decision.</li>
+				</ul>
+			</section>
+
+			<section>
+				<img src="images/context_llm_close.png" alt="context" width="80%" height="70%">
+				<aside class="notes">
+					<ul>
+						<li>Less neurons, less processing power.</li>
+					</ul>
+				</aside>
+			</section>
+
+			<section>
+				<div data-id="box" style="height:70px;  background: rgb(61, 52, 50);">
+					<h4 class="r-fit-text r-frame"> Detailed Prompt + Decent context + Good Model  = *desired output.</h4>
+				</div>
+			</section>
+
+			<section>
+				<h1 class="r-frame">Context is King</h1>
+			</section>
+
+			<section>
+				<h3 class="r-frame"> ChatGPT vs Coding Assistants</h3>
+				<ul>
+					<li>Trained for coding.</li>
+					<li>Multi model support for various purposes. </li>
+					<li>IDE integrations, integrated chat, autocompletion via APIs.</li>
+					<li>Auto Context awareness</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3 class="r-frame"> Codebase Indexing and Embeddings</h3>
+				<ul>
+					<li>Trained for coding.</li>
+					<li>Multi model support for various purposes. </li>
+					<li>IDE integrations, integrated chat, autocompletion via APIs.</li>
+					<li>Auto Context awareness</li>
+				</ul>
+			</section>
+
+			<section>
+				<img src="images/coding_assitants.png" alt="codebase indexing" >
+			</section>
+
+			<section>
+				<h1>
+					Takeaways
+				</h1>
+				<ul>
+					<li>Put your mind into the prompt.</li>
+					<li>Be mindful of the context.</li>
+					<li>For Models: Bigger is better.</li>
+					<li>Using coding assistance is the future. It will get better.</li>
+				</ul>
+			</section>
 		
 				<!-- Slide 11: Closing + Q&A -->
 				<section>
-					<h2>Q&A Time!</h2>
-					<p>So remember: AI is like that well-meaning intern. It tries its best, but it needs guidance from us to be effective!</p>
-					<p>Any questions? Feel free to ask—or let’s see if AI can help… but no promises on accuracy!</p>
+					<h1>Thank you!</h1>
 				</section>
 		
 			</div>
